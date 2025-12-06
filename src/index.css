@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+
+
+.nav{
+  border-bottom: 1px solid #0a0000;
+}
+
+.nav-items{
+  position: relative;
+}
+
+.nav-items::after{
+   content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #D3E97A;
+  transition: transform 0.25s ease-out;
+}
+
+.beba-text{
+  font-family: var(--font-Bebas);
+}
+
+.manrope-text{
+  font-family: 'Manrope', sans-serif;
+}
+.nav-items{
+  font-family: var(--font-inter);
+}
+
+.nav-items:hover::after{
+  transform: scaleX(1);
+}
+
+
+:root {
+ 
+  --font-Bebas: "Bebas Neue", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
