@@ -1,4 +1,4 @@
-import BakerzImage from "./Proimg/bakerz-bite.png";
+import BakerzImage from "./Proimg/Bakerz-Bite.png";
 
 import projectImage from "./Proimg/image.png";
 
