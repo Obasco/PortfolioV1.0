@@ -28,7 +28,7 @@ const HeroSection = () => {
           {/* Description Paragraph */}
           {/* Note: In the image, the font weight is normal and the text size is moderate */}
           <p className='text-xl max-w-lg leading-relaxed manrope-text pt-2 opacity-85'>
-            A Sydney based front-end developer passionate about building accessible and user friendly websites.
+            A Nigerian Young  based front-end developer passionate about building accessible and user friendly websites.
           </p>
 
           {/* Buttons/Icons */}
