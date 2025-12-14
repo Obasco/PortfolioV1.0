@@ -3,6 +3,7 @@ import NavBar from './LayoutsComp/NavBar'
 import HeroSection from './LayoutsComp/HeroSection'
 import ProjectsPage from './LayoutsComp/ProjectsPage'
 import Snowfall from 'react-snowfall'
+import AboutHome from './LayoutsComp/AboutHome'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
     <NavBar/>
     <HeroSection/>
     <ProjectsPage/>
+    <AboutHome/>
     </>
   )
 }

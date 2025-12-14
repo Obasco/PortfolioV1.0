@@ -2,6 +2,8 @@ import BakerzImage from "./proimg/bakerz-bite.png";
 
 import projectImage from "./proimg/image.png";
 
+import Petimage from "./proimg/Petcare.png"
+
 export const featured = [
   {
     id: 1,
@@ -27,4 +29,17 @@ export const featured = [
     liveDemo: "https://bakerz-bite-delta.vercel.app",
     github: "https://github.com/Obasco/Bakerz-Bite",
   },
+
+  {
+  id: 3,
+  tag: "Web Application",
+  title: "Furr-Ever Care",
+  description:
+    "A responsive pet care web application designed to help users manage pet-related services with ease. Focused on friendly UI, clear navigation, and a smooth user experience for pet owners.",
+  year: "2024",
+  role: "Front-end Developer",
+  image: Petimage,
+  liveDemo: "https://furr-ever-care-beta.vercel.app",
+  github: "https://github.com/Obasco/Furr-Ever-Care",
+},
 ];

@@ -6,7 +6,7 @@ import Snowfall from "react-snowfall";
 const ProjectsPage = () => {
   return (
 
-    <section className="bg-[#0A0A0A] text-white mt-24 min-h-screen">
+    <section className="bg-[#0A0A0A] text-white mt-24 min-h-screen  border-b  border-b-[#484848]">
       <Snowfall />
       {/* Header */}
       <div>
