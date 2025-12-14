@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <>
 
-      <section className="bg-[#0A0A0A] text-white min-h-screen flex justify-center items-center py-0 px-8 lg:px-24">
+      <section className="bg-[#0A0A0A] text-white min-h-screen flex justify-center items-center py-0 px-8 lg:px-15">
       {/* Content wrapper to control max width and apply grid layout for desktop */}
       <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 

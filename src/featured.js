@@ -12,8 +12,8 @@ export const featured = [
     "year": "2023",
     "role": "Front-end Developer",
     "image": projectImage,
-    "liveDemo": "https://your-demo-link.com",
-    "github": "https://github.com/your-profile/your-project"
+    "liveDemo": "wallet-web-iota.vercel.app",
+    "github": "https://github.com/Obasco/Wallet-Web"
   },
   {
     "id": 2,
