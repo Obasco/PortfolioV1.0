@@ -4,6 +4,7 @@ import HeroSection from './LayoutsComp/HeroSection'
 import ProjectsPage from './LayoutsComp/ProjectsPage'
 import Snowfall from 'react-snowfall'
 import AboutHome from './LayoutsComp/AboutHome'
+import Connect from './LayoutsComp/Connect'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
     <HeroSection/>
     <ProjectsPage/>
     <AboutHome/>
+    <Connect/>
     </>
   )
 }
