@@ -1,8 +1,8 @@
-import BakerzImage from "./Proimg/Bakerz-Bite.png";
+import BakerzImage from "./proimg/Bakerz-Bite.png";
 
-import projectImage from "./Proimg/image.png";
+import projectImage from "./proimg/image.png";
 
-import Petimage from "./Proimg/Petcare.png"
+import Petimage from "./proimg/Petcare.png"
 
 export const featured = [
   {
