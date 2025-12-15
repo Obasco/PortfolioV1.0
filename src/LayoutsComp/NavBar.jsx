@@ -1,29 +1,31 @@
-import React from 'react'
-import '../index.css'
+import React from "react";
+import "../index.css";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   return (
-<nav className="bg-[#0A0A0A] text-[#c7c7c7] flex justify-between items-center px-6 py-5 relative">
-      
+    <nav className="bg-[#0A0A0A] text-[#c7c7c7] flex justify-between items-center px-6 py-5 relative">
       {/* Logo */}
       <div>
         <h1 className="text-2xl sm:text-3xl lg:text-4xl beba-text uppercase leading-none">
-          Olumide Obayemi
+         <a href="/"> Olumide Obayemi</a>
         </h1>
       </div>
 
       {/* Desktop Links */}
       <ul className="hidden lg:flex gap-8 list-none">
-        <li className="nav-items text-lg cursor-pointer">
-          Work
+         <li className="nav-items text-lg cursor-pointer">
+          <a href="/">Home</a>
         </li>
         <li className="nav-items text-lg cursor-pointer">
-          About
+          <a href="/work"> Work</a>
         </li>
         <li className="nav-items text-lg cursor-pointer">
-          Connect
+          <a href="/about">About</a>
+        </li>
+        <li className="nav-items text-lg cursor-pointer">
+          <a href="/connect">Connect</a>
         </li>
       </ul>
 
@@ -62,7 +64,7 @@ const NavBar = () => {
         </div>
       )}
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

@@ -1,22 +1,26 @@
-import React from 'react'
-import NavBar from './LayoutsComp/NavBar'
-import HeroSection from './LayoutsComp/HeroSection'
-import ProjectsPage from './LayoutsComp/ProjectsPage'
-import Snowfall from 'react-snowfall'
-import AboutHome from './LayoutsComp/AboutHome'
-import Connect from './LayoutsComp/Connect'
+import React from "react";
+import NavBar from "./LayoutsComp/NavBar";
+import Allpage from "./Allpage";
+import ProjectsPage from "./LayoutsComp/ProjectsPage";
+import Snowfall from "react-snowfall";
+import AboutHome from "./LayoutsComp/AboutHome";
+import Connect from "./LayoutsComp/Connect";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <>
-    <Snowfall />
-    <NavBar/>
-    <HeroSection/>
-    <ProjectsPage/>
-    <AboutHome/>
-    <Connect/>
-    </>
-  )
-}
+    <BrowserRouter>
+      <Snowfall />
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Allpage />} />
+        <Route path="/work" element={<ProjectsPage/>} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/about" element={<AboutHome />} />
+        <Route path="/connect" element={<Connect />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
