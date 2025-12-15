@@ -1,7 +1,23 @@
 import { Github, Instagram, Linkedin, TwitterIcon } from 'lucide-react'
 import React from 'react'
-
+import { useForm, ValidationError } from '@formspree/react';
+import { CheckCircle2 } from 'lucide-react';
 const Connect = () => {
+        const [state, handleSubmit] = useForm("xpwvnkvn");
+        if (state.succeeded) {
+  return (
+    <section className="bg-[#0A0A0A] text-white min-h-screen flex items-center justify-center">
+        <CheckCircle2 className='text-center text-[#D3E97A]' height={200} width={300}/>
+      <div className="text-center">
+        <h2 className="text-3xl beba-text mb-4">Message Sent </h2>
+        <p className="text-[#c7c7c7] manrope-text">
+          Thanks for reaching out. I’ll get back to you shortly.
+        </p>
+      </div>
+    </section>
+  );
+}
+
   return (
 <section className="bg-[#0A0A0A] text-white mt-24 min-h-screen flex border-b border-b-[#484848]">
   <div className="w-full max-w-7xl mx-auto px-6 lg:px-12 py-16">
@@ -28,7 +44,7 @@ const Connect = () => {
 
       {/* Right */}
       <div>
-        <form className="grid gap-6 max-w-lg manrope-text">
+        <form onSubmit={handleSubmit} className="grid gap-6 max-w-lg manrope-text">
 
           {/* Name */}
           <div className="flex flex-col gap-2">
@@ -42,6 +58,11 @@ const Connect = () => {
               required
               placeholder="John Doe"
               className="bg-[#1a1a1a] border border-[#1a1a1a] rounded-3xl px-4 py-3 outline-none focus:border-[#D3E97A] transition"
+            />
+            <ValidationError 
+              prefix="Name" 
+              field="username"
+              errors={state.errors}
             />
           </div>
 
@@ -58,6 +79,11 @@ const Connect = () => {
               placeholder="johndoe@email.com"
               className="bg-[#1a1a1a] border border-[#1a1a1a] rounded-3xl px-4 py-3 outline-none focus:border-[#D3E97A] transition"
             />
+            <ValidationError 
+              prefix="Email" 
+              field="email"
+              errors={state.errors}
+            />
           </div>
 
           {/* Subject */}
@@ -72,6 +98,11 @@ const Connect = () => {
               required
               placeholder="want to work together?"
               className="bg-[#1a1a1a] border border-[#1a1a1a] rounded-3xl px-4 py-3 outline-none focus:border-[#D3E97A] transition"
+            />
+            <ValidationError 
+              prefix="Subject" 
+              field="subject"
+              errors={state.errors}
             />
           </div>
 
@@ -89,11 +120,17 @@ const Connect = () => {
               placeholder="Tell me about your project..."
               className="bg-[#1a1a1a] border border-[#1a1a1a] rounded-3xl px-4 py-3 outline-none focus:border-[#D3E97A] transition resize-none"
             />
+            <ValidationError 
+              prefix="Message" 
+              field="message"
+              errors={state.errors}
+            />
           </div>
 
           {/* Button */}
           <button
             type="submit"
+            disabled={state.submitting}
             className="w-fit bold bg-[#D3E97A] text-black px-8 py-3 rounded-4xl uppercase manrope-text tracking-wide hover:opacity-90 transition"
           >
             Submit

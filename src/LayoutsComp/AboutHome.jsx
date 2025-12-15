@@ -1,7 +1,10 @@
 import { Section } from 'lucide-react'
 import React from 'react'
 
+
 const AboutHome = () => {
+
+
   return (
    <section className="bg-[#0A0A0A] text-white mt-24 min-h-screen flex items-center  border-b  border-b-[#484848]">
   <div className="w-full max-w-7xl mx-auto px-6 lg:px-12">
@@ -17,7 +20,7 @@ const AboutHome = () => {
       {/* Right */}
       <div>
         <h1 className="manrope-text text-lg sm:text-xl lg:text-2xl mb-4">
-          I am a front-end developer based in Sydney. Has a Mechanical Engineering background.
+          I am a Young front-end developer based in Nigeria.
         </h1>
 
         <p className="text-[#c7c7c7] leading-relaxed manrope-text max-w-lg mb-4 text-sm sm:text-base">
@@ -29,7 +32,7 @@ const AboutHome = () => {
         </p>
 
         <p className="underline text-[#D3E97A] cursor-pointer text-sm sm:text-base">
-          More About Me
+          {/* More About Me */}
         </p>
       </div>
 
