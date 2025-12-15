@@ -45,12 +45,12 @@ const HeroSection = () => {
               {/* Social Icons */}
               {/* LinkedIn Icon */}
               <button className="p-3 border border-gray-700 bg-[#222222] rounded-full hover:bg-gray-700 transition duration-300">
-                <Linkedin className="w-6 h-6 text-[#D3E97A]" />
+                <a href="https://www.linkedin.com/in/obayemi-olumide-223700325/"><Linkedin className="w-6 h-6 text-[#D3E97A]" /></a>
               </button>
 
               {/* GitHub Icon (Assuming the third icon is GitHub based on common portfolios) */}
               <button className="p-3 border border-gray-700 bg-[#222222] rounded-full hover:bg-gray-700 transition duration-300">
-                <Github className="w-6 h-6 text-[#D3E97A]" />
+                <a href="https://github.com/Obasco"><Github className="w-6 h-6 text-[#D3E97A]" /></a>
               </button>
             </div>
           </div>
