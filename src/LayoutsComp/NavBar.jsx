@@ -23,7 +23,7 @@ const NavBar = () => {
           About
         </li>
         <li className="nav-items text-lg cursor-pointer">
-          Contact
+          Connect
         </li>
       </ul>
 
@@ -56,7 +56,7 @@ const NavBar = () => {
               className="text-lg cursor-pointer hover:text-white transition"
               onClick={() => setOpen(false)}
             >
-              Contact
+              Connect
             </li>
           </ul>
         </div>
