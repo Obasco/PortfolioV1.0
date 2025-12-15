@@ -35,11 +35,13 @@ const HeroSection = () => {
           <div className='flex items-center space-x-4 pt-6'>
             
             {/* Contact Me Button: Light green background, black text, rounded */}
-            <button className='flex items-center bg-[#D3E97A] text-black font-semibold py-3 px-6 rounded-full hover:bg-opacity-80 transition duration-300'>
+         <a href="https://wa.me/2348143133880?text=Hello%20Olumide%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20work%20with%20you.">
+             <button className='flex items-center bg-[#D3E97A] text-black font-semibold py-3 px-6 rounded-full hover:bg-opacity-80 transition duration-300'>
               CONTACT ME
               {/* Optional small circle/dot for visual fidelity */}
               <span className="ml-2 w-2 h-2 bg-black rounded-full"></span>
             </button>
+         </a>
             
             {/* Social Icons */}
             {/* LinkedIn Icon */}
