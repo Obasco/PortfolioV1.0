@@ -25,9 +25,9 @@ const Connect = () => {
   return (
     <section className="bg-[#0A0A0A] text-white mt-24 min-h-screen flex border-b border-b-[#484848]">
       <div className="w-full max-w-7xl mx-auto px-6 lg:px-12 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start" >
           {/* Left */}
-          <div>
+          <div  data-aos="fade-right" data-aos-duration="1000">
             <h1 className="uppercase text-4xl sm:text-5xl lg:text-6xl beba-text mb-6">
               Let's Connect
             </h1>
@@ -46,7 +46,7 @@ const Connect = () => {
               </a>
             </p>
 
-            <div className="flex gap-5 mt-4">
+            <div className="flex gap-5 mt-4" data-aos="fade-left" data-aos-duration="1000">
               <a href="https://www.linkedin.com/in/obayemi-olumide-223700325/">
                 {" "}
                 <Linkedin className="w-8 h-8 text-[#D3E97A] mt-4 cursor-pointer" />
@@ -61,7 +61,7 @@ const Connect = () => {
           </div>
 
           {/* Right */}
-          <div>
+          <div data-aos="fade-left" data-aos-duration="1000">
             <form
               onSubmit={handleSubmit}
               className="grid gap-6 max-w-lg manrope-text"

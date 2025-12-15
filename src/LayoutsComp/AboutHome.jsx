@@ -7,7 +7,7 @@ const AboutHome = () => {
 
   return (
    <section className="bg-[#0A0A0A] text-white mt-24 min-h-screen flex items-center  border-b  border-b-[#484848]">
-  <div className="w-full max-w-7xl mx-auto px-6 lg:px-12">
+  <div className="w-full max-w-7xl mx-auto px-6 lg:px-12" data-aos="fade-down" data-aos-duration="1000">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
       
       {/* Left */}

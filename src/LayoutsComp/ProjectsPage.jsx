@@ -5,9 +5,11 @@ import { Github } from "lucide-react";
 import Snowfall from "react-snowfall";
 const ProjectsPage = () => {
   return (
-
+    
+    <>
+    <Snowfall />
     <section className="bg-[#0A0A0A] text-white mt-24 min-h-screen  border-b  border-b-[#484848]">
-      <Snowfall />
+     
       {/* Header */}
       <div>
         <div className="ps-8 lg:ps-15 mb-16">
@@ -21,7 +23,7 @@ const ProjectsPage = () => {
 
       {/* Projects */}
 
-     <div className="lg:ps-15 ps-8 manrope-text">
+     <div className="lg:ps-15 ps-8 manrope-text" data-aos="fade-up" data-aos-duration="1000">
   {featured.map((featured) => (
     <div
       key={featured.title} // Don't forget a unique key!
@@ -81,6 +83,7 @@ const ProjectsPage = () => {
   ))}
 </div>
     </section>
+    </>
   );
 };
 

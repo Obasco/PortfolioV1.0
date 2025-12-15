@@ -6,9 +6,11 @@ import Snowfall from "react-snowfall";
 import AboutHome from "./LayoutsComp/AboutHome";
 import Connect from "./LayoutsComp/Connect";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const App = () => {
   return (
+      AOS.init(),
     <BrowserRouter>
       <Snowfall />
       <NavBar />
