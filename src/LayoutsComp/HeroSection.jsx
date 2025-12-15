@@ -32,7 +32,7 @@ const HeroSection = () => {
             {/* Buttons/Icons */}
             <div className="flex items-center space-x-4 pt-6">
               <a
-                href="https://wa.me/2348012345678?text=Hello%20Olumide%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20work%20with%20you."
+                href="https://wa.me/2348143133880?text=Hello%20Olumide%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20work%20with%20you."
                 target="_blank"
                 rel="noopener noreferrer"
               >
